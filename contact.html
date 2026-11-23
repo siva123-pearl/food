@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restraunt | Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">RESTAURANT</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-banner">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you.</p>
+  </section>
+
+  <section>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>📍 Address</h3>
+        <p>Add your restaurant address here.</p>
+      </div>
+      <div class="info-card">
+        <h3>📞 Phone</h3>
+        <p>Add your restaurant phone number.</p>
+      </div>
+      <div class="info-card">
+        <h3>🕒 Opening Hours</h3>
+        <p>Add your actual opening hours.</p>
+      </div>
+    </div>
+
+    <form class="form-box" id="contactForm">
+      <h2>Send Us a Message</h2>
+
+      <label for="contactName">Your Name</label>
+      <input type="text" id="contactName" required
+        placeholder="Enter your name">
+
+      <label for="contactEmail">Email Address</label>
+      <input type="email" id="contactEmail" required
+        placeholder="Enter your email">
+
+      <label for="contactText">Your Message</label>
+      <textarea id="contactText" rows="5" required
+        placeholder="Write your message"></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p class="message" id="contactMessage"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <h2>RESTAURANT</h2>
+  <p>© 2026 Restaurant. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

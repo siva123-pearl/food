@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restraunt | Booking</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">RESTAURANT</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-banner">
+    <h1>Book Your Table</h1>
+    <p>Plan your next dining experience with us.</p>
+  </section>
+
+  <section>
+    <form class="form-box" id="bookingForm">
+      <h2>Reservation Details</h2>
+
+      <label for="bookingName">Your Name</label>
+      <input id="bookingName" type="text" required
+        placeholder="Enter your name">
+
+      <label for="bookingPhone">Phone Number</label>
+      <input id="bookingPhone" type="tel" required
+        pattern="[0-9]{10}" maxlength="10"
+        placeholder="10 digit phone number">
+
+      <label for="bookingDate">Booking Date</label>
+      <input id="bookingDate" type="date" required>
+
+      <label for="bookingTime">Booking Time</label>
+      <input id="bookingTime" type="time" required>
+
+      <label for="guests">Number of Guests</label>
+      <select id="guests" required>
+        <option value="">Select guests</option>
+        <option value="1">1 Guest</option>
+        <option value="2">2 Guests</option>
+        <option value="3">3 Guests</option>
+        <option value="4">4 Guests</option>
+        <option value="5">5 Guests</option>
+        <option value="6">6 Guests</option>
+      </select>
+
+      <button type="submit" class="btn">Confirm Booking</button>
+      <p class="message" id="bookingMessage"></p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <h2>RASA HOUSE</h2>
+  <p>© 2026 Rasa House. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

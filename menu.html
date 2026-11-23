@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>restro | Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">RESTAURANT</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-banner">
+    <h1>Our Food Menu</h1>
+    <p>Discover delicious South Indian dishes.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Explore Our Menu</h2>
+    <p class="section-subtitle">Choose your favourite food.</p>
+
+    <div class="menu-controls">
+      <input type="search" id="searchInput"
+        placeholder="Search your favourite food...">
+      <div class="menu-tabs" id="menuTabs"></div>
+    </div>
+
+    <p class="menu-count" id="menuCount"></p>
+    <div class="menu-grid" id="menuItems"></div>
+  </section>
+</main>
+
+<footer>
+  <h2>RASA HOUSE</h2>
+  <p>Authentic South Indian Flavours</p>
+  <p>© 2026 Rasa House. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
